@@ -1,0 +1,72 @@
+@font-face {
+    font-family: "custom_police" ;
+    src: url(".//Honey-I-spilt-Verdana.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    /*mes couleurs*/
+    --col-dark-main :#000000;
+    --col-dar-alt :#181515;
+    --col-light :#e7f3f5;
+    --col-shadows :#e7f3f5b0;
+}
+
+body {  
+    font-family: "custom_police", sans-serif;
+    background-color: var(--col-dark-main);
+    color:var(--col-light);
+
+    
+}
+
+header { 
+        background-color:var(--col-dar-alt);
+
+}
+
+#inter1 {
+    background-image: url("../assets/pictures/inter1.png");
+
+
+}
+
+#inter2 {
+    background-image: url("../assets/pictures/inter2.png");   
+}
+
+.inter-article { 
+    width:100vw;
+    aspect-ratio: 3/1;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* réglage des articles*/
+
+article {
+    display: flex;
+    flex-direction: row
+    justity
+    width: 75%;
+    padding: 30px;
+    margin : 15px;
+    background-color: var(--col-dark-alt);
+    border-radius: 10px;
+    box-shadow: var (col-shadow) 2px 2px 4px 0;
+
+}
+
+
+art-text {
+
+    width : 45%;
+}
+
+
+footer {
+    background-color: var(--col-dar-alt);
+}
