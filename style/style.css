@@ -24,7 +24,105 @@ body {
 }
 
 header { 
-        background-color:var(--col-dar-alt);
+
+    position: fixed;
+    background-color:var(--col-dark-alt);
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content : space-between;
+    align-items: center;
+    background-color: var(--col-dar-alt);
+    padding: 20px;
+    z-index: 10;
+}   
+/* header*/
+
+.header-title {
+        width : 35%;
+        display: flex;
+        flex-direction: row;
+        justify-content : start;
+        align-items: center;
+}
+h1{     font-size: 2.5rem;
+        margin: 0 25px;
+
+}
+
+.header-title>img{
+        display: block;
+        width: 20%;
+        border-radius: 15%;
+
+
+}
+
+
+
+
+
+
+
+nav {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+
+}
+
+
+/*boutons*/
+
+.btn {
+    display: block;
+    padding: 5px 10px;
+    border-radius: 10px;
+    width :fit-content;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.btn-dark:hover {
+    background-color: #201616;
+
+}
+
+.btn-dark {
+    background-color: var(--col-dark-main);
+    color:var (--col-light);
+}
+
+.btn-light {
+     background-color: var(--col-light);
+    color:var (--col-dark-main) ;
+
+}
+.btn-light:hover {
+    background-color:var(--col-dark-main);
+    color : var(--col-light);
+    border: var(var(--col-light)) solid 2px ;
+    padding : 4px 6px;
+}
+
+
+/*partie main */
+
+main {
+    position: relative;
+    top: 15vh;
+    display : flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items : center;
+    
+}
+
+main>* {
+    margin : 5vh 0;
 
 }
 
@@ -41,7 +139,9 @@ header {
 .inter-article { 
     width:100vw;
     aspect-ratio: 3/1;
-
+    background-attachment: fixed;
+    background-position-y: center;
+    background-size: 100vw;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -49,8 +149,8 @@ header {
 
 article {
     display: flex;
-    flex-direction: row
-    justity
+    flex-direction: row;
+    justify-content: start;
     width: 75%;
     padding: 30px;
     margin : 15px;
@@ -61,12 +161,38 @@ article {
 }
 
 
-art-text {
+.art-text {
 
     width : 45%;
 }
 
+.art-illus {
+   display :block;
+   width : 45%; 
+}
 
 footer {
+    
+    position: relative;
+    top: 10vh;
     background-color: var(--col-dar-alt);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    border-top: var(--col-light solid 1px);
+
+
+}   
+
+.foot-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 35%;
+    border-top: var(--col-light solid 1px);
+
+
+
 }
