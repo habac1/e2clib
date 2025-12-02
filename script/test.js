@@ -18,7 +18,7 @@ console.log(number1 % number2)
 username = "geronimo"
 
 console.log(username)
-*/
+
 let firstname; 
 let lastname;
 
@@ -28,3 +28,11 @@ lastname = prompt("Quel est votre nom de famille?")
 alert('Bonjour '    + firstname + " " +  lastname)
 
 alert(`BONJOUR ${firstname} ${lastname}, comment tu-vas?`)
+*/
+
+function firstfunction() {
+console.log ("Ceci est une phrase")
+alert(`danger`)
+}
+
+firstfunction();

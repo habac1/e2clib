@@ -58,8 +58,9 @@ h1{     font-size: 2.5rem;
 
 }
 
-
-
+#text-zone{
+    color:white;
+}
 
 
 
@@ -113,12 +114,12 @@ nav {
 
 main {
     position: relative;
-    top: 15vh;
+    top: 30vh;
     display : flex;
     flex-direction: column;
     justify-content: start;
     align-items : center;
-    
+    min-height: 80vh;
 }
 
 main>* {
@@ -194,5 +195,15 @@ footer {
     border-top: var(--col-light solid 1px);
 
 
+
+}
+
+.site>p, h3 {
+    margin-bottom: 5px;
+
+}
+
+.js-zone {
+    margin: 5px;
 
 }
